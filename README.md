@@ -1,49 +1,42 @@
-# SI-UKKW-SIWP2005_OOP_2024 Object-Oriented Programming
+# Dareen-sort
+This repository contains Python implementations of multiple sorting method (Bubble sort, Quick Sort, Insertion Sort)
 
-## HW#3 build your own python package
+## Table of Contents
 
-## Overview
-In this assignment, you will create, build, and publish a Python package to PyPi. The package you will develop is a collection of sorting algorithms, which can be used to sort lists of numbers. The package will include several common sorting algorithms such as bubble sort, insertion sort, and quick sort. You will follow best practices for structuring your package, writing documentation, and publishing it on PyPi.
+- [Installation](##installation)
+- [Usage](##usage)
+- [Contributing](##contributing)
+- [License](##license)
 
-## Objectives
-- Understand the structure of a Python package.
-- Write a setup.py file to specify package details.
-- Create a README.md file with usage instructions.
-- Register an account on PyPi.
-- Build the package using setuptools and wheel.
-- Upload the package to PyPi using twine.
-- Verify the package on PyPi.
+## Installation
 
-## Evaluation Criteria
-- Correct structure of the Python package.
-- Completeness and correctness of setup.py and README.md.
-- Successful registration and upload to PyPi.
-- Clear and well-documented code for sorting algorithms.
-- Functionality verification of the package on PyPi.
+You can install Dareen-Sort package using pip:
 
-## Project structure
-
+```bash
+pip install dareen-sort
 ```
-siwp2005-name-sort
-│   ├── CHANGES.txt
-│   ├── LICENSE
-│   ├── MANIFEST.in
-│   ├── pyproject.toml
-│   ├── README.md
-│   ├── setup.cfg
-│   ├── setup.py
-│   ├── src
-│   │   └── sort
-│   │       ├── bubble_sort.py
-│   │       ├── __init__.py
-│   │       ├── insertion_sort.py
-│   │       └── quick_sort.py
-│   └── tests
-│       ├── __init__.py
-│       ├── test_bubble_sort.py
-│       ├── test_insertion_sort.py
-│       └── test_quick_sort.py
-```
-Note: Please change the `name` to your name. for example `siwp2005-monica-sort`
-Good luck, and happy coding!
 
+##Usage
+
+Heres how you use the package
+
+```bash
+arr = [5,6,7,13,44,67,22,11]
+
+print(sort.bubble_sort.bubble_sort(arr)) #for bubble sort
+print(sort.insertion_sort.insertion_sort(arr)) #for insertion sort
+print(sort.quick_sort.quick_sort(arr)) #for quick sort
+```
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+### Explanation
+
+1. **Installation**: Provides the command to install the package using pip.
+2. **Usage**: Shows how to import and use the sorting functions provided by the package.
+3. **Sorting Algorithms**: Describes each sorting algorithm, including a brief explanation and usage example.
+4. **Contributing**: Encourages contributions and provides a link to the GitHub repository.
+5. **License**: Mentions the license under which the package is distributed.
+
+This `README.md` file should help users understand what the `dareen-sort` package does and how to use it effectively.
